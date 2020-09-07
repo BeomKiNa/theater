@@ -1,0 +1,45 @@
+<li>
+    <button class="on">CGV거제</button>
+</li>
+<li>
+    <button>CGV구미</button>
+</li>
+<li>
+    <button>CGV김천율곡</button>
+</li>
+<li>
+    <button>CGV김해</button>
+</li>
+<li>
+    <button>CGV김해율하</button>
+</li>
+<li>
+    <button>CGV김해장유</button>
+</li>
+<li>
+    <button>CGV마산</button>
+</li>
+<li>
+    <button>CGV북포항</button>
+</li>
+<li>
+    <button>CGV안동</button>
+</li>
+<li>
+    <button>CGV양산물금</button>
+</li>
+<li>
+    <button>CGV양산삼호</button>
+</li>
+<li>
+    <button>CGV창원</button>
+</li>
+<li>
+    <button>CGV창원더시티</button>
+</li>
+<li>
+    <button>CGV통영</button>
+</li>
+<li>
+    <button>CGV포항</button>
+</li>

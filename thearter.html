@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>CGV | 영화관</title>
+    <link rel="icon" sizes="16x16" type="image/png" href="src/img/favicon.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/thearter.css">
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=cb6c2a86255a996cce821166f4d1a4d9&libraries=services"></script>
+    <script src="js/header_mobile.js" defer></script>
+    <script type="module" src="js/theater_categoryBtnHandler.js" defer></script>
+    <script type="module" src="js/theater_btnHandler.js" defer></script>
+    <script type="module" src="js/thearterMap.js" defer></script>
+    <script type="module" src="js/theaterObject.js" defer></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <a href="#main" class="hidden">메인으로 이동</a>
+        <header class="bg_w">
+            <div class="header_inner">
+                <h1 class="header__title">
+                    <a href="index.html"><img src="src/img/logo.png" alt="씨지비 홈으로"></a>
+                </h1>
+                <button class="menuOpen"><i class="fas fa-bars fa-2x"></i></button>
+                <div class="mobile">
+                    <nav class="gnb cf">
+                        <a href="#">예매</a>
+                        <a href="movies.html">영화</a>
+                        <a href="thearter.html">영화관</a>
+                        <a href="event.html">이벤트</a>
+                        <a href="store.html">스토어</a>
+                    </nav>
+                    <ul class="tnb_left cf">
+                        <li><a href="login.html">로그인</a></li>
+                        <li><a href="join.html">회원가입</a></li>
+                    </ul>
+                    <ul class="tnb_right cf">
+                        <li><a href="https://www.facebook.com/CJCGV" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="https://www.instagram.com/cgv_korea/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://www.youtube.com/channel/UCmjUMtUw6wXLrsULdxuXWdg" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                    <button class="menuClose"><i class="fas fa-times fa-2x"></i></button>
+                </div>
+            </div>
+        </header>
+        <main id="main">
+            <section>
+                <h2>영화관</h2>
+                <span class="mobileChooseArea">CGV강남</span>
+                <div class="thearterlistContainner cf">
+                    <div class="categoryBtns thearterArea cf">
+                        <button id="thearterCity1" class="on">서울</button>
+                        <button id="thearterCity2">경기</button>
+                        <button id="thearterCity3">인천</button>
+                        <button id="thearterCity4">강원</button>
+                        <button id="thearterCity5">대전/충청</button>
+                        <button id="thearterCity6">대구</button>
+                        <button id="thearterCity7">부산/울산</button>
+                        <button id="thearterCity8">경상</button>
+                        <button id="thearterCity9">광주/전라/제주</button>
+                    </div>
+                    <ul class="thearterList cf">
+                        <li><button class="on">CAR CINEMA</button></li>
+                        <li><button>CGV강남</button></li>
+                        <li><button>CGV강변</button></li>
+                        <li><button>CGV건대입구</button></li>
+                        <li><button>CGV구로</button></li>
+                        <li><button>CGV대학로</button></li>
+                        <li><button>CGV동대문</button></li>
+                        <li><button>CGV등촌</button></li>
+                        <li><button>CGV명동</button></li>
+                        <li><button>CGV명동역 씨네라이브러리</button></li>
+                        <li><button>CGV목동</button></li>
+                        <li><button>CGV미아</button></li>
+                        <li><button>CGV불광</button></li>
+                        <li><button>CGV상봉</button></li>
+                        <li><button>CGV성신여대입구</button></li>
+                        <li><button>CGV송파</button></li>
+                        <li><button>CGV수유</button></li>
+                        <li><button>CGV신촌아트레온</button></li>
+                        <li><button>CGV압구정</button></li>
+                        <li><button>CGV여의도</button></li>
+                        <li><button>CGV영등포</button></li>
+                        <li><button>CGV왕십리</button></li>
+                        <li><button>CGV용산아이파크몰</button></li>
+                        <li><button>CGV중계</button></li>
+                        <li><button>CGV천호</button></li>
+                        <li><button>CGV청담씨네시티</button></li>
+                        <li><button>CGV피카디리1958</button></li>
+                        <li><button>CGV하계</button></li>
+                        <li><button>CGV홍대</button></li>
+                    </ul>
+                </div>
+                <div class="content">
+                    <div id="map" style="width:100%;height:350px;"></div>
+                    <ul class="contentListContainer cf">
+
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer_inner">
+                <img src="src/img/logo.png" alt="씨지비 로고">
+                <ul class="links cf">
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">IR</a></li>
+                    <li><a href="#">채용정보</a></li>
+                    <li><a href="#">광고/프로모션문의</a></li>
+                    <li><a href="#">제휴문의</a></li>
+                    <li><a href="#">출점문의</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">편성기준</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">법적고지</a></li>
+                    <li><a href="#">이메일주소무단수집거부</a></li>
+                    <li><a href="#">상생경영</a></li>
+                    <li><a href="#">사이트맵</a></li>
+                </ul>
+                <div class="address_container">
+                    <address>(04377)서울특별시 용산구 한강대로 23길 55, 아이파크몰 6층(한강로동)</address>
+                    <ul class="cf">
+                        <li>대표이사 : 최병환</li>
+                        <li>사업자등록번호 : 104-81-45690</li>
+                        <li>통신판매업신고번호 : 2017-서울용산-0662</li>
+                        <li>호스팅사업자 : CJ올리브네트웍스</li>
+                        <li>개인정보보호 책임자 : 이동현</li>
+                        <li>대표이메일 : cjcgvmaster@cj.netCGV</li>
+                        <li>고객센터 : 1544-1122</li>
+                    </ul>
+                </div>
+                <p class="copyright">COPY &copy; CJ CGV. All Rights Reserved</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
