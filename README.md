@@ -21,4 +21,4 @@ Renewal CGV with HTML, CSS, Javascript(ES6+), Kakao Map API
 
 ## Github Pages Link
 
-[Visit NOW!](https://beomki69.github.io/Theater/)
+[Visit NOW!](https://nabeomki.github.io/theater/)
